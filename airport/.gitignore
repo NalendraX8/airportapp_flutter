@@ -36,6 +36,8 @@ migrate_working_dir/
 /android/app/build/
 /android/app/.cxx/
 /macos/
+/windows/
+/linux/
 
 # Symbolication related
 app.*.symbols
