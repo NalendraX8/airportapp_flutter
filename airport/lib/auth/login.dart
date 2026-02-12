@@ -27,13 +27,13 @@ class _LoginPageState extends State<LoginPage> {
           obscureText: isPassword,
           decoration: InputDecoration(
             hintText: 'Sini masukkan $label',
-            prefixIcon: Icon(icon, color: Colors.black87),
+            prefixIcon: Icon(icon, color: Color(0xff5C40CC)),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12),
             ),
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12),
-              borderSide: const BorderSide(color: Colors.blueAccent, width: 2),
+              borderSide: const BorderSide(color: Color(0xff5C40CC), width: 2),
             ),
             contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
           ),
@@ -65,7 +65,7 @@ class _LoginPageState extends State<LoginPage> {
               ),
               const SizedBox(height: 8),
               const Text(
-                'PlaceHolder gweh test 1234567',
+                'PlaceHolder testing 12345678',
                 style: TextStyle(
                   fontSize: 16,
                   color: Colors.grey,
@@ -105,6 +105,15 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
               ),
+              const SizedBox(height: 100),
+              const Text(
+                    'Terms & Conditions',
+                    style: TextStyle(fontSize: 16, 
+                    color: Colors.grey,
+                    decoration: TextDecoration.underline,
+                    ),
+                ),
+
               const SizedBox(height: 20),
             ],
           ),

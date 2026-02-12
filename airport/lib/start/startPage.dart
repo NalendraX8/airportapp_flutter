@@ -21,34 +21,47 @@ class StartPage extends StatelessWidget {
             ),
           ),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              const Text('Welcome to Ngawi Airport App', 
+              const Text('Fly like a bird', 
               style: TextStyle(
-                fontSize: 24,
+                fontSize: 32,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
               ),
               textAlign: TextAlign.center,
               ),
-              const SizedBox(height: 16),
-              const Text('Flying With Ngawi Airport', 
+              const SizedBox(height: 10),
+              const Text('Explore new world with us and let\nyourself get an amazing experience', 
               style: TextStyle(
                 fontSize: 16,
                 color: Colors.white,
               ),
               textAlign: TextAlign.center,
               ),
-              const SizedBox(height: 16),
+              const SizedBox(height: 50),
               ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color(0xff5c40cc),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(17),
+                    ),
+                ),
                 onPressed: () {
-                  Navigator.push(
+                  Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(builder: (context) => const LoginPage()),
                   );
                 },
-                child: const Text('Start Here'),
+                child: const Text('Start Fly Now!',
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+                ),
               ),
+              const SizedBox(height: 80),
             ],
           ),
         ),    

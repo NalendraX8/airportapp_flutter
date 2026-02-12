@@ -138,7 +138,7 @@ class BonusPage extends StatelessWidget {
         ),
         onPressed: () {
           //onpressed ke homepage.dart cik
-          Navigator.push(
+          Navigator.pushReplacement(
             context,
             MaterialPageRoute(builder: (context) => const HomePage()),
           );

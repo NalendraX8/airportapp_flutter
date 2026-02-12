@@ -28,23 +28,24 @@ class _SplashPlaneState extends State<SplashPlane> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xff5C40CC),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset('assets/images/flight.png',
-            width: 200,
-            height: 200,
+            Icon(Icons.flight,
+            size: 200,
+            color: Colors.white,
             ),
             const SizedBox(height: 16),
-            Text('N G A W I   A I R P O R T', 
+            Text('A  I  R  P  L  A  N  E', 
 
             //Disini font global nya di ganti pake poppins 
             style:
             GoogleFonts.poppins(
               fontSize: 24, 
               fontWeight: FontWeight.bold, 
-              color: Colors.black)),
+              color: Colors.white)),
           ],
         ),
       ),
