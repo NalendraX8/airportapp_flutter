@@ -74,11 +74,21 @@ class HomePage extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 child: Row(
                   children: [
-                    _buildDestinationCard(
-                      'Emirates Stadium',
-                      'London, UK',
-                      'assets/images/emirates2.png',
-                      5.0,
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const DetailPage(),
+                          ),
+                        );
+                      },
+                      child: _buildDestinationCard(
+                        'Emirates Stadium',
+                        'London, UK',
+                        'assets/images/emirates2.png',
+                        5.0,
+                      ),
                     ),
                     _buildDestinationCard(
                       'Stamford Bridge',
