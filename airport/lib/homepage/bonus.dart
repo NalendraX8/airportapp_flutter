@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:airport/homepage/homepage.dart';
+import 'package:airport/components/purpButton.dart';
 
 class BonusPage extends StatelessWidget {
   const BonusPage({super.key});
@@ -32,8 +33,18 @@ class BonusPage extends StatelessWidget {
                 fontWeight: FontWeight.w300,
               ),
             ),
+
             const SizedBox(height: 50),
-            _buildStartButton(context),
+
+            PurpButton(
+              text: 'Hayuk Terbang',
+              onPressed: () {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => const HomePage()),
+              );
+            }
+            ),
           ],
         ),
       ),
@@ -120,37 +131,6 @@ class BonusPage extends StatelessWidget {
             ),
           ),
         ],
-      ),
-    );
-  }
-
-  // widget tombol
-  Widget _buildStartButton(BuildContext context) {
-    return SizedBox(
-      width: 220,
-      height: 55,
-      child: ElevatedButton(
-        style: ElevatedButton.styleFrom(
-          backgroundColor: const Color(0xff5C40CC),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(17),
-          ),
-        ),
-        onPressed: () {
-          //onpressed ke homepage.dart cik
-          Navigator.pushReplacement(
-            context,
-            MaterialPageRoute(builder: (context) => const HomePage()),
-          );
-        },
-        child: const Text(
-          'Hayuk Terbang',
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 18,
-            fontWeight: FontWeight.w500,
-          ),
-        ),
       ),
     );
   }

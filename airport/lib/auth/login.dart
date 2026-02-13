@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:airport/homepage/bonus.dart';
+import 'package:airport/components/purpButton.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -80,30 +81,15 @@ class _LoginPageState extends State<LoginPage> {
               _buildTextField('Hobi anda', Icons.star),
 
               const SizedBox(height: 30),
-              
-              SizedBox(
-                width: double.infinity,
-                height: 50,
-                child: ElevatedButton(
-                  onPressed: () {
-                    Navigator.pushReplacement(
+
+              PurpButton(
+                text: 'Login',
+                onPressed: () {
+                  Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(builder: (context) => const BonusPage()),
                     );
                   },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.deepPurple,
-                    foregroundColor: Colors.white,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    elevation: 5,
-                  ),
-                  child: const Text(
-                    'Login',
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                  ),
-                ),
               ),
               const SizedBox(height: 100),
               const Text(
@@ -113,6 +99,8 @@ class _LoginPageState extends State<LoginPage> {
                     decoration: TextDecoration.underline,
                     ),
                 ),
+
+
 
               const SizedBox(height: 20),
             ],

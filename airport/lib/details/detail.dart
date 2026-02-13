@@ -122,8 +122,8 @@ class DetailPage extends StatelessWidget {
                     ),
                     const SizedBox(height: 10),
                     const Text(
-                      'Berada di jalur jalan provinsi yang menghubungkan Denpasar Singaraja serta letaknya yang dekat dengan Kebun Raya Eka Karya menjadikan tempat Bali.',
-                      style: TextStyle(color: Colors.grey, height: 1.5),
+                        'test test test test test test test test test test test testtest test test test test testtest test test test test testtest test test test test testtest test test test test testtest test test test test testtest test test test test testtest test test test test test',
+                     style: TextStyle(color: Colors.grey, height: 1.5),
                     ),
                     const SizedBox(height: 24),
 
